@@ -3,7 +3,7 @@ package threads.test;
 
 public class testOddEvenThreads {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		final threadOddEven tOE = new threadOddEven();
 		
         Thread tO = new Thread () {
@@ -20,5 +20,10 @@ public class testOddEvenThreads {
         
         tO.start();
         tE.start();
+        
+		tO.join();
+		tE.join();
+        
+        System.out.println(Thread.currentThread().getName() + " end now!");
 	}
 }
