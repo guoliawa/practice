@@ -331,6 +331,8 @@ public class arrayListPrac<E> extends AbstractList<E> implements List<E>,
 		list.add("2");
 		list.add("3");
 		list.add("4");
+		
+//		list.add(44);
 
 		list.add(0, "5");
 

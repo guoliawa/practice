@@ -26,6 +26,8 @@ public class HashMapTest {
 					+ entry.getValue());
 		}
 
+		Iterator iterKey = map.keySet().iterator();
+		
 		System.out.println("size : " + map.size());
 
 		System.out.println("contains key two : " + map.containsKey("two"));
